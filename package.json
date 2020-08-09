@@ -15,9 +15,10 @@
     "react-scripts": "^3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "test": "react-scripts test --env=jsdom",
+    "heroku-postbuild": "npm run build",
     "eject": "react-scripts eject"
   },
   "browserslist": {
